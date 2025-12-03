@@ -38,18 +38,21 @@
         }
         .preview-wrapper {
             width: 100%;
-            height: 300px;
+            height: 180px;
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-bottom: 15px;
             background: #fafafa;
             overflow: hidden;
+            position: relative;
         }
         .preview {
             width: 100%;
             height: 100%;
             border: none;
-            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .card h3 {
             margin: 10px 0 5px 0;
@@ -77,157 +80,149 @@
         .links a:hover {
             background: #218838;
         }
+        @media (max-width: 768px) {
+            .preview-wrapper {
+                height: 140px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎨 Анимации DonorSearch</h1>
-        
+        <h1>Анимации DonorSearch</h1>
+
         <div class="grid">
-            <!-- КАРТОЧКА 1 -->
             <div class="card">
-                <h3>Название анимации 1</h3>
+                <h3>Weekday / Monthday</h3>
+                <div class="preview-wrapper">
+                    <iframe src="weekday_monthday_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p>Распределение по дням недели и дням месяца.</p>
+                <div class="links">
+                    <a href="weekday_monthday_animated.html" target="_blank">Открыть</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Top‑10 UTM Source (NaN)</h3>
+                <div class="preview-wrapper">
+                    <iframe src="top10_utm_source_with_NaN_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p>Топ‑10 источников UTM с учётом NaN.</p>
+                <div class="links">
+                    <a href="top10_utm_source_with_NaN_animated.html" target="_blank">Открыть</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Top‑10 UTM Campaign (NaN)</h3>
+                <div class="preview-wrapper">
+                    <iframe src="top10_utm_campaign_with_NaN_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p>Топ‑10 кампаний UTM с учётом NaN.</p>
+                <div class="links">
+                    <a href="top10_utm_campaign_with_NaN_animated.html" target="_blank">Открыть</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Top‑10 UTM Source</h3>
+                <div class="preview-wrapper">
+                    <iframe src="top10_utm_source_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p>Топ‑10 источников UTM.</p>
+                <div class="links">
+                    <a href="top10_utm_source_animated.html" target="_blank">Открыть</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Top‑10 UTM Campaign</h3>
+                <div class="preview-wrapper">
+                    <iframe src="top10_utm_campaign_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <p>Топ‑10 кампаний UTM.</p>
+                <div class="links">
+                    <a href="top10_utm_campaign_animated.html" target="_blank">Открыть</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Gender Payments Share</h3>
                 <div class="preview-wrapper">
                     <iframe src="gender_payments_share.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Доля платежей по полу пользователей.</p>
                 <div class="links">
                     <a href="gender_payments_share.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 2 -->
             <div class="card">
-                <h3>Название анимации 2</h3>
+                <h3>Authorized Payments Share</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_2.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="authorized_payments_share.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Доля авторизованных платежей.</p>
                 <div class="links">
-                    <a href="твой_файл_2.html" target="_blank">Открыть</a>
+                    <a href="authorized_payments_share.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 3 -->
             <div class="card">
-                <h3>Название анимации 3</h3>
+                <h3>Payments by Age</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_3.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="payments_users_age_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Распределение платежей по возрасту.</p>
                 <div class="links">
-                    <a href="твой_файл_3.html" target="_blank">Открыть</a>
+                    <a href="payments_users_age_animated.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 4 -->
             <div class="card">
-                <h3>Название анимации 4</h3>
+                <h3>Top‑10 Regions by Donors</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_4.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="top10_regions_users_donation_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Топ‑10 регионов по числу доноров.</p>
                 <div class="links">
-                    <a href="твой_файл_4.html" target="_blank">Открыть</a>
+                    <a href="top10_regions_users_donation_animated.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 5 -->
             <div class="card">
-                <h3>Название анимации 5</h3>
+                <h3>Top‑10 Cities by Donors</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_5.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="top10_cities_users_donation_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Топ‑10 городов по числу доноров.</p>
                 <div class="links">
-                    <a href="твой_файл_5.html" target="_blank">Открыть</a>
+                    <a href="top10_cities_users_donation_animated.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 6 -->
             <div class="card">
-                <h3>Название анимации 6</h3>
+                <h3>Top‑10 Cities (Users)</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_6.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="top10_cities_users_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Топ‑10 городов по числу пользователей.</p>
                 <div class="links">
-                    <a href="твой_файл_6.html" target="_blank">Открыть</a>
+                    <a href="top10_cities_users_animated.html" target="_blank">Открыть</a>
                 </div>
             </div>
 
-            <!-- КАРТОЧКА 7 -->
             <div class="card">
-                <h3>Название анимации 7</h3>
+                <h3>Top‑10 Cities by Amount</h3>
                 <div class="preview-wrapper">
-                    <iframe src="твой_файл_7.html" class="preview" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="top10_cities_amount_animated.html" class="preview" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Краткое описание</p>
+                <p>Топ‑10 городов по сумме пожертвований.</p>
                 <div class="links">
-                    <a href="твой_файл_7.html" target="_blank">Открыть</a>
+                    <a href="top10_cities_amount_animated.html" target="_blank">Открыть</a>
                 </div>
             </div>
-
-            <!-- КАРТОЧКА 8 -->
-            <div class="card">
-                <h3>Название анимации 8</h3>
-                <div class="preview-wrapper">
-                    <iframe src="твой_файл_8.html" class="preview" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <p>Краткое описание</p>
-                <div class="links">
-                    <a href="твой_файл_8.html" target="_blank">Открыть</a>
-                </div>
-            </div>
-
-            <!-- КАРТОЧКА 9 -->
-            <div class="card">
-                <h3>Название анимации 9</h3>
-                <div class="preview-wrapper">
-                    <iframe src="твой_файл_9.html" class="preview" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <p>Краткое описание</p>
-                <div class="links">
-                    <a href="твой_файл_9.html" target="_blank">Открыть</a>
-                </div>
-            </div>
-
-            <!-- КАРТОЧКА 10 -->
-            <div class="card">
-                <h3>Название анимации 10</h3>
-                <div class="preview-wrapper">
-                    <iframe src="твой_файл_10.html" class="preview" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <p>Краткое описание</p>
-                <div class="links">
-                    <a href="твой_файл_10.html" target="_blank">Открыть</a>
-                </div>
-            </div>
-
-            <!-- КАРТОЧКА 11 -->
-            <div class="card">
-                <h3>Название анимации 11</h3>
-                <div class="preview-wrapper">
-                    <iframe src="твой_файл_11.html" class="preview" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <p>Краткое описание</p>
-                <div class="links">
-                    <a href="твой_файл_11.html" target="_blank">Открыть</a>
-                </div>
-            </div>
-
-            <!-- КАРТОЧКА 12 -->
-            <div class="card">
-                <h3>Название анимации 12</h3>
-                <div class="preview-wrapper">
-                    <iframe src="твой_файл_12.html" class="preview" frameborder="0" scrolling="no"></iframe>
-                </div>
-                <p>Краткое описание</p>
-                <div class="links">
-                    <a href="твой_файл_12.html" target="_blank">Открыть</a>
-                </div>
-            </div>
-            
         </div>
     </div>
 </body>
